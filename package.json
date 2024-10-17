@@ -1,0 +1,39 @@
+{
+  "name": "commitlint-config-bloq",
+  "version": "1.0.0",
+  "description": "Shareable commitlint config as we do at Bloq",
+  "keywords": [
+    "bloq",
+    "commitlint",
+    "commitlint-config",
+    "config",
+    "git"
+  ],
+  "bugs": "https://github.com/bloq/commitlint-config-bloq/issues",
+  "license": "MIT",
+  "author": "Gabriel Montes <gabriel@bloq.com>",
+  "files": [
+    "src"
+  ],
+  "main": "src/index.js",
+  "repository": "bloq/commitlint-config-bloq",
+  "scripts": {
+    "format:check": "prettier --check .",
+    "lint": "eslint --cache .",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "better-sort-package-json": "1.0.0",
+    "eslint": "^8.57.1",
+    "eslint-config-bloq": "^4.2.0",
+    "eslint-plugin-markdownlint": "^0.6.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3"
+  },
+  "engines": {
+    "node": ">=16.9.0"
+  },
+  "type": "module"
+}
