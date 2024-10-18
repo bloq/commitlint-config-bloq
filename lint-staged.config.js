@@ -1,11 +1,11 @@
-const lintFile = "eslint --cache --fix --quiet";
-const formatFile = "prettier --ignore-unknown --write";
-const sortPackageJson = "better-sort-package-json";
+const formatFiles = "prettier --ignore-unknown --write";
+const lintFiles = "eslint --cache --fix --quiet";
+const sortPackageJsonFiles = "node bin/cli.js";
 
 const config = {
-  "*,!*.{js,md},!package.json": [formatFile],
-  "*.{js,md}": [lintFile, formatFile],
-  "package.json": [sortPackageJson, formatFile],
+  "!(*.{js,md}|package.json)": [formatFiles],
+  "*.{js,md}": [lintFiles, formatFiles],
+  "package.json": [sortPackageJsonFiles, formatFiles],
 };
 
 export default config;
