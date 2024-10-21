@@ -1,5 +1,6 @@
 {
   "extends": ["bloq", "prettier"],
+  "ignorePatterns": ["src-cjs"],
   "overrides": [
     {
       "extends": ["bloq/markdown"],

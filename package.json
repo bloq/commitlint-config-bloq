@@ -13,17 +13,23 @@
   "license": "MIT",
   "author": "Gabriel Montes <gabriel@bloq.com>",
   "files": [
-    "src"
+    "src",
+    "src-cjs"
   ],
   "main": "src/index.js",
   "repository": "bloq/commitlint-config-bloq",
   "scripts": {
     "format:check": "prettier --check .",
     "lint": "eslint --cache .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "prepublishOnly": "babel src/index.js --out-file src-cjs/index.cjs"
   },
   "devDependencies": {
+    "@babel/cli": "^7.25.7",
+    "@babel/core": "^7.25.8",
+    "@babel/plugin-transform-modules-commonjs": "^7.25.7",
     "@commitlint/cli": "^19.5.0",
+    "babel-plugin-add-module-exports": "^1.0.4",
     "better-sort-package-json": "^1.0.0",
     "eslint": "^8.57.1",
     "eslint-config-bloq": "^4.2.0",
@@ -38,5 +44,9 @@
   "engines": {
     "node": ">=16.9.0"
   },
-  "type": "module"
+  "type": "module",
+  "exports": {
+    "import": "./src/index.js",
+    "require": "./src-cjs/index.cjs"
+  }
 }
