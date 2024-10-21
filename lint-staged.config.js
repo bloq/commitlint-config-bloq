@@ -1,6 +1,6 @@
 const formatFiles = "prettier --ignore-unknown --write";
 const lintFiles = "eslint --cache --fix --quiet";
-const sortPackageJsonFiles = "node bin/cli.js";
+const sortPackageJsonFiles = "better-sort-package-json";
 
 const config = {
   "!(*.{js,md}|package.json)": [formatFiles],

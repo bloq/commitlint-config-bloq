@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
-    "better-sort-package-json": "1.0.0",
+    "better-sort-package-json": "^1.0.0",
     "eslint": "^8.57.1",
     "eslint-config-bloq": "^4.2.0",
     "eslint-plugin-markdownlint": "^0.6.0",
