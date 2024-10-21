@@ -1,5 +1,3 @@
-// See: https://cbea.ms/git-commit/
-
 import { RuleConfigSeverity } from "@commitlint/types";
 
 /**
