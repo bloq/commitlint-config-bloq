@@ -6,6 +6,7 @@
     "bloq",
     "commitlint",
     "commitlint-config",
+    "commitlintplugin",
     "config",
     "git"
   ],
